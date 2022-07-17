@@ -59,7 +59,7 @@
         </div>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <!-- 阻止表单提交 -->
-        <button class="btn btn-primary">添加资产</button>
+        <button class="btn btn-primary" @click.prevent="addFn">添加资产</button>
       </form>
     </div>
   </div>
@@ -82,7 +82,11 @@ export default {
       ],
     };
   },
-
+	methods: {
+		addFn() {
+			
+		}
+	}
 };
 </script>
 
